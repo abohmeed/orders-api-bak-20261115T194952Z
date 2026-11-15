@@ -1,0 +1,12 @@
+name: deps
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  deps:
+    name: deps
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "deps checks run here"
